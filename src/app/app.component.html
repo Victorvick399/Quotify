@@ -1,8 +1,21 @@
 <div class="container">
   <div class="jumbotron">
+    <!-- <img src="../assets/icon.png" style="height: 100px;width: 200px;"> -->
     <h1>Quotify</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#">Quote list</a></li>
+      <li><a href="#quotelist">Add Quote</a></li>
+      <li><a href="#contactus">Contact us</a></li>
+    </ul>
   </div>
-  <div>
+  <div id="home">
+    <app-home></app-home>
+  </div>
+  <div id="quotelist">
     <app-quote-form></app-quote-form>
+  </div>
+  <div id="contactus">
+    <app-contactus></app-contactus>
   </div>
 </div>
