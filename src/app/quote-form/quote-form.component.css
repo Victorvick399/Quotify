@@ -1,3 +1,7 @@
+h2{
+  color: blue;
+  text-align: center;
+}
 input{
   display: block;
   padding: 20px;
@@ -7,5 +11,14 @@ textarea{
   padding: 20px;
 }
 button{
-  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 12px 28px;
+  margin: 10px 400px 10px;
+}
+form{
+  background-color: rgb(209, 202, 202);
+}
+.row{
+  margin: 10px;
 }
