@@ -1,4 +1,19 @@
+.jumbotron{
+  background-color:  rgb(209, 202, 202);
+}
+.jumbotron li{
+  display: inline-block;
+  list-style: none;
+  padding: 20px;
+  font-size: 25px;
+}
 .jumbotron h1{
   text-align: center;
-  height: 40px;
+  color: blue;
+  margin-top:10px ;
+}
+.jumbotron img{
+  margin-top: 0;
+  margin-left: 0;
+  padding: 0;
 }
