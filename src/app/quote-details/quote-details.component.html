@@ -1,10 +1,9 @@
 <p>
-  Author :{{quote.author}}<br>
-  Description: {{quote.description}}<br>
-  Posted at {{quote.postedtime| date}}
+  Author : {{quote.author}}<br>
+  Published {{quote.postedtime | date}} days ago.
   <br>
-  <button id="like" (click)='Upvotes()'>Like</button>{{this.quote.upvote}}
+  <button id="like" (click)='addUpvotes(quote.upvote)'>Like</button> {{this.quote.upvote}}
   <br>
-  <button id="dislike" (click)='Downvotes()'>Dislike</button>{{this.quote.downvote}}
+  <button id="dislike" (click)='addDownvotes(quote.downvote)'>Dislike</button>  {{this.quote.downvote}}
 </p>
 <button (click)='quoteDelete(true)'>Delete</button>
