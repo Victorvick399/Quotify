@@ -1,0 +1,10 @@
+<p>
+  Author :{{quote.author}}<br>
+  Description: {{quote.description}}<br>
+  Posted at {{quote.postedtime| date}}
+  <br>
+  <button id="like" (click)='Upvotes()'>Like</button>{{this.quote.upvote}}
+  <br>
+  <button id="dislike" (click)='Downvotes()'>Dislike</button>{{this.quote.downvote}}
+</p>
+<button (click)='quoteDelete(true)'>Delete</button>

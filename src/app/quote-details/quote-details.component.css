@@ -1,0 +1,10 @@
+button{
+  border-radius: 8px;
+  background-color: blue;
+}
+#like{
+  background-color: green;
+}
+#dislike{
+  background-color: red;
+}
