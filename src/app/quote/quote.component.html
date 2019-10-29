@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-6 quotelist">
+    <h3>Quote list</h3>
+    <ul>
+      <div *ngFor='let quote of quotes;let i =index'>
+        <li>Posted by:{{quote.name}}<br>Quote:
+          {{quote.line}}<br>
+        </li>
+        <button (click)='toggleDetails(i)'>Details</button>
+        <app-quote-details *ngIf='quote.showDetails' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
+      </div>
+    </ul>
+  </div>
+  <div class="col-md-6" id="addquote">
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+  </div>
+</div>   
