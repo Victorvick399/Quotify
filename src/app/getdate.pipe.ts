@@ -16,7 +16,7 @@ export class GetdatePipe implements PipeTransform {
     if (posttime >= 1 && value > todayWithNoTime){
       return 0;
     }else{
-      return posttime;
+      return Math.round(posttime);
     }
   }
 
