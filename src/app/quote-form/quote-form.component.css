@@ -1,5 +1,5 @@
 h2{
-  color: blue;
+  color:#ff6361;
   text-align: center;
 }
 input{
@@ -17,8 +17,11 @@ button{
   margin: 10px 400px 10px;
 }
 form{
-  background-color: rgb(209, 202, 202);
+  background-color: black;
 }
 .row{
   margin: 10px;
+}
+.alert{
+  display: none;
 }
