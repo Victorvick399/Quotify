@@ -1,18 +1,35 @@
-.jumbotron{
-  background-color:  rgb(209, 202, 202);
+body{
+  /* background-image:url("../assets/background.png") ; */
+  background-color:#003f5c ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  font-size: 20px;
 }
-.jumbotron li{
+nav{
+  background-color:black;
+  height: 170px;
+}
+nav li{
   display: inline-block;
   list-style: none;
   padding: 20px;
   font-size: 25px;
+  left: 400px;
 }
-.jumbotron h1{
+nav li a{
+  color: #ff6361;
+}
+nav li a :hover{
+  padding:10px ;
+  text-decoration-line: none;
+}
+nav h1{
   text-align: center;
-  color: blue;
+  color: #ff6361;
   margin-top:10px ;
 }
-.jumbotron img{
+nav img{
   margin-top: 0;
   margin-left: 0;
   padding: 0;
