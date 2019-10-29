@@ -1,5 +1,6 @@
 import { Component, OnInit, Output,EventEmitter } from '@angular/core';
-import { Quote } from '@angular/compiler';
+import { Quote } from '../quote';
+
 
 
 @Component({
@@ -8,30 +9,18 @@ import { Quote } from '@angular/compiler';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-  
-   name: string;
-   author: string;
-   line: string;
-   description: string;
-   postedtime: Date;
+ 
+  newQuote= new Quote("","","",new Date(),0,0);
 
   @Output() addQuote = new EventEmitter<Quote>();
-  showDetails: any;
-  upvote:0;
-  downvote:0;
+  //showDetails: any;
 
   submitQuote(){
-     const newQuote = {
-      name : this.name,
-      author : this.author,
-      line: this.line,
-      description: this.line,
-      postedtime: Date,
-      upvote:0,
-      downvote: 0,
-      showDetails:false,
-    }
-    this.addQuote.emit(newQuote)
+    this.newQuote.upvote=0;
+    this.newQuote.downvote=0;
+    this.addQuote.emit(this.newQuote);
+
+    this.newQuote = new Quote ("","","",new Date(),0, 0);
   }
 
   

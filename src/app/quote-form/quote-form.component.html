@@ -5,33 +5,30 @@
       <div class="col-md-6">
         <div class="form-group">
           <label>Name:</label>
-          <input type="text" placeholder="Enter your name here.." required class="form-control" id="name" [(ngModel)]="name" name="name" #myName = "ngModel">
-          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          <input type="text" placeholder="Enter your name here.." required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #myName = "ngModel">
+        </div>  
+          <div [hidden]="myName.valid || myName.pristine" class="alert alert-danger">
             <p>Your name is required.</p>
           </div>
-        </div>
         <div class="form-group">
             <label>Author:</label>
-            <input type="text" placeholder="Enter author name here.." required class="form-control" id="author" [(ngModel)]="author" name="author" #myAuthor = "ngModel">
+            <input type="text" placeholder="Enter author name here.." required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #myAuthor = "ngModel">
         </div>
-          <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+          <div [hidden]="myAuthor.valid || myAuthor.pristine" class="alert alert-danger">
             <p>Author's name is required.</p>
           </div>  
       </div>  
       <div class="col-md-6"> 
         <div class="form-group">
           <label>Quote:</label>
-          <textarea placeholder="Enter quote here" required class="form-control" id="line" [(ngModel)]="line" name="line" #myLine = "ngModel"></textarea>
-          <div [hidden]="line.valid || line.pristine" class="alert alert-danger">
+          <textarea placeholder="Enter quote here" required class="form-control" id="line" [(ngModel)]="newQuote.line" name="line" #myLine = "ngModel"></textarea>
+          <div [hidden]="myLine.valid || myLine.pristine" class="alert alert-danger">
             <p>The quote is required.</p>
           </div>
         </div>  
         <div class="form-group">
-          <label>Description:</label>
-          <textarea placeholder="Enter the description here" required class="form-control" id="description" [(ngModel)]="description" name="description" #myDescription = "ngModel"></textarea>
-        </div>
-        <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
-          <p>The description is required.</p>
+          <label>Date of publish:</label>
+          <input type="date" [(ngModel)]="newQuote.postedtime" name="postedtime">
         </div>
       </div>   
       <button type="submit" class="btn btn-primary" >Add</button>
